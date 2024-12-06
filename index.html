@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <div class="content_header">
+                <img src="product images/heart.png" alt="Logotipo AluraGeek">
+                <p>Projeto AluraGeek</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-container">
+        <!-- Seção de Produtos -->
+        <section class="produtos-lista">
+            <h1>Meus Produtos</h1>
+            <div class="produtos-container" data-produtos>
+                <p class="nenhum-produto">Nenhum produto foi adicionado.</p>
+            </div>
+        </section>
+
+        <!-- Seção do Formulário -->
+        <section class="adicionar-produto">
+            <h1>Adicionar Produto</h1>
+            <form id="produtoForm">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" placeholder="Digite o nome do produto" required>
+
+                <label for="preco">Preço do Produto:</label>
+                <input type="number" id="preco" placeholder="Digite o preço do produto" step="0.01" min="0" required>
+
+                <label for="imagem">Imagem do Produto:</label>
+                <input type="file" id="imagem" accept="image/*">
+
+                <div class="form-buttons">
+                    <button type="submit">Adicionar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="content_header">
+        <img src="product images/heart.png" alt="Logotipo AluraGeek">
+        <p>Desenvolvido por João Victor Silva</p>
+    </div>
+        <small>2024 - Projeto para AluraGeek</small>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>
